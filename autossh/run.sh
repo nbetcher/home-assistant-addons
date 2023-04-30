@@ -72,7 +72,7 @@ ssh-keyscan -p $SSH_PORT $HOSTNAME || true
 
 COMMAND="/usr/bin/autossh "\
 " -M 0 "\
-"-o ServerAliveInterval=30 "\
+"-o ServerAliveInterval=5 "\
 "-o ServerAliveCountMax=3 "\
 "-o StrictHostKeyChecking=no "\
 "-o ExitOnForwardFailure=yes "\
